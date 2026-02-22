@@ -1,0 +1,25 @@
+[project]
+name = "nabis"
+version = "0.1.0"
+description = "NABIS 균형발전지표 데이터 수집 및 분석"
+requires-python = ">=3.12"
+dependencies = [
+    # 데이터 수집 (Selenium)
+    "selenium>=4.41.0",
+    "webdriver-manager>=4.0.2",
+    "requests>=2.32.0",
+    "beautifulsoup4>=4.12.0",
+    # Excel 파싱
+    "xlrd>=2.0.1",       # .xls (구형 바이너리 포맷)
+    "openpyxl>=3.1.5",   # .xlsx (새 XML 포맷)
+    # 데이터 분석
+    "pandas>=3.0.1",
+    "numpy>=2.4.0",
+    # 지리 공간
+    "geopandas>=1.1.2",
+    "pyproj>=3.7.0",
+    "pyogrio>=0.12.0",
+    "shapely>=2.1.0",
+    # 시각화
+    "matplotlib>=3.10.0",
+]

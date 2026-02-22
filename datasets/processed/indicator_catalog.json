@@ -1,0 +1,324 @@
+[
+  {
+    "indicator_no": 1,
+    "indicator_type": "핵심지표",
+    "category": "핵심지표",
+    "indicator_name": "최근 5년 연평균 인구증감률",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 2,
+    "indicator_type": "핵심지표",
+    "category": "핵심지표",
+    "indicator_name": "재정자립도 3개년 평균",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 3,
+    "indicator_type": "객관지표",
+    "category": "인구",
+    "indicator_name": "인구증감률",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 4,
+    "indicator_type": "객관지표",
+    "category": "인구",
+    "indicator_name": "합계출산율",
+    "unit": "가임여성1명당 명"
+  },
+  {
+    "indicator_no": 5,
+    "indicator_type": "객관지표",
+    "category": "인구",
+    "indicator_name": "조사망률",
+    "unit": "1천명당 명"
+  },
+  {
+    "indicator_no": 6,
+    "indicator_type": "객관지표",
+    "category": "인구",
+    "indicator_name": "등록외국인수",
+    "unit": "명"
+  },
+  {
+    "indicator_no": 7,
+    "indicator_type": "객관지표",
+    "category": "인구",
+    "indicator_name": "고령화지수",
+    "unit": "명"
+  },
+  {
+    "indicator_no": 8,
+    "indicator_type": "객관지표",
+    "category": "인구",
+    "indicator_name": "청년층순이동률",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 9,
+    "indicator_type": "객관지표",
+    "category": "교육",
+    "indicator_name": "어린이집 및 유치원 서비스권역내 영유아인구 비율",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 10,
+    "indicator_type": "객관지표",
+    "category": "교육",
+    "indicator_name": "초등학교 서비스권역 내 학령인구 비율",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 11,
+    "indicator_type": "객관지표",
+    "category": "교육",
+    "indicator_name": "고등교육기관 졸업자의 취업률",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 12,
+    "indicator_type": "객관지표",
+    "category": "교육",
+    "indicator_name": "인구 만명당 비형식 평생교육기관의 수",
+    "unit": "개소"
+  },
+  {
+    "indicator_no": 13,
+    "indicator_type": "객관지표",
+    "category": "주거 및 교통",
+    "indicator_name": "노후주택비율",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 14,
+    "indicator_type": "객관지표",
+    "category": "주거 및 교통",
+    "indicator_name": "대중교통수송분담률",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 15,
+    "indicator_type": "객관지표",
+    "category": "주거 및 교통",
+    "indicator_name": "직주근접성",
+    "unit": ""
+  },
+  {
+    "indicator_no": 16,
+    "indicator_type": "객관지표",
+    "category": "문화여가",
+    "indicator_name": "공공도서관 서비스권역 내 인구비율",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 17,
+    "indicator_type": "객관지표",
+    "category": "문화여가",
+    "indicator_name": "공공체육시설 서비스권역 내 인구비율",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 18,
+    "indicator_type": "객관지표",
+    "category": "문화여가",
+    "indicator_name": "지자체 예산 중 문화예산 비율",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 19,
+    "indicator_type": "객관지표",
+    "category": "안전",
+    "indicator_name": "소방서 접근성",
+    "unit": "km"
+  },
+  {
+    "indicator_no": 20,
+    "indicator_type": "객관지표",
+    "category": "안전",
+    "indicator_name": "경찰서 접근성",
+    "unit": "km"
+  },
+  {
+    "indicator_no": 21,
+    "indicator_type": "객관지표",
+    "category": "안전",
+    "indicator_name": "구조구급대원 1인당 담당주민수",
+    "unit": "주민수/구조구급대원1명"
+  },
+  {
+    "indicator_no": 22,
+    "indicator_type": "객관지표",
+    "category": "안전",
+    "indicator_name": "119안전센터 1개당 담당주민수",
+    "unit": "주민수/119안전센터1개"
+  },
+  {
+    "indicator_no": 23,
+    "indicator_type": "객관지표",
+    "category": "안전",
+    "indicator_name": "지진옥외대피소",
+    "unit": ""
+  },
+  {
+    "indicator_no": 24,
+    "indicator_type": "객관지표",
+    "category": "생활환경",
+    "indicator_name": "하수도보급률",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 25,
+    "indicator_type": "객관지표",
+    "category": "생활환경",
+    "indicator_name": "생활권공원 서비스권역 내 인구 비율",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 26,
+    "indicator_type": "객관지표",
+    "category": "생활환경",
+    "indicator_name": "행정구역면적(1㎢)당 대기오염물질배출량",
+    "unit": "톤/㎢·년"
+  },
+  {
+    "indicator_no": 27,
+    "indicator_type": "객관지표",
+    "category": "생활환경",
+    "indicator_name": "생활계폐기물 재활용 비율",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 28,
+    "indicator_type": "객관지표",
+    "category": "생활환경",
+    "indicator_name": "행정구역면적 대비 공원면적비",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 29,
+    "indicator_type": "객관지표",
+    "category": "생활환경",
+    "indicator_name": "주민1인당 생활폐기물 발생량",
+    "unit": "kg/명"
+  },
+  {
+    "indicator_no": 30,
+    "indicator_type": "객관지표",
+    "category": "보건복지",
+    "indicator_name": "국민기초생활보장수급자비율",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 31,
+    "indicator_type": "객관지표",
+    "category": "보건복지",
+    "indicator_name": "지자체 보건 및 사회복지 분야 예산",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 32,
+    "indicator_type": "객관지표",
+    "category": "보건복지",
+    "indicator_name": "인구 십만명당 사회복지시설수",
+    "unit": "개소/십만명"
+  },
+  {
+    "indicator_no": 33,
+    "indicator_type": "객관지표",
+    "category": "보건복지",
+    "indicator_name": "응급의료시설 서비스권역 내 인구비율",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 34,
+    "indicator_type": "객관지표",
+    "category": "보건복지",
+    "indicator_name": "병원 서비스권역 내 인구 비율",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 35,
+    "indicator_type": "객관지표",
+    "category": "산업·일자리",
+    "indicator_name": "최근 3개년 사업체수 증감률",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 36,
+    "indicator_type": "객관지표",
+    "category": "산업·일자리",
+    "indicator_name": "최근 3개년 종사자수 증감률",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 37,
+    "indicator_type": "객관지표",
+    "category": "산업·일자리",
+    "indicator_name": "경제활동참가율",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 38,
+    "indicator_type": "객관지표",
+    "category": "산업·일자리",
+    "indicator_name": "연구원당 연구개발비",
+    "unit": "천원/연구개발인력1명"
+  },
+  {
+    "indicator_no": 39,
+    "indicator_type": "객관지표",
+    "category": "산업·일자리",
+    "indicator_name": "지식기반산업집적도 3개년 평균",
+    "unit": ""
+  },
+  {
+    "indicator_no": 40,
+    "indicator_type": "객관지표",
+    "category": "산업·일자리",
+    "indicator_name": "최근 3개년 창업기업수 증감률",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 41,
+    "indicator_type": "객관지표",
+    "category": "생산·분배",
+    "indicator_name": "지역내총생산",
+    "unit": "단위 : 백만원"
+  },
+  {
+    "indicator_no": 42,
+    "indicator_type": "객관지표",
+    "category": "생산·분배",
+    "indicator_name": "지역내 무역거래량",
+    "unit": ""
+  },
+  {
+    "indicator_no": 43,
+    "indicator_type": "객관지표",
+    "category": "생산·분배",
+    "indicator_name": "지역내소비",
+    "unit": "단위 : 백만원"
+  },
+  {
+    "indicator_no": 44,
+    "indicator_type": "객관지표",
+    "category": "물가·재정",
+    "indicator_name": "소비자물가상승률",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 45,
+    "indicator_type": "객관지표",
+    "category": "물가·재정",
+    "indicator_name": "지가변동률",
+    "unit": "%"
+  },
+  {
+    "indicator_no": 46,
+    "indicator_type": "객관지표",
+    "category": "물가·재정",
+    "indicator_name": "재정자립도",
+    "unit": "%"
+  }
+]

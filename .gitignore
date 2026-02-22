@@ -1,0 +1,41 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# uv
+.uv_cache/
+uv.lock
+
+# WebDriver
+.wdm/
+chromedriver/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Claude
+.claude/
+
+# 임시 파일
+*.tmp
+nabis_temp.html
+nabis_debug.txt
+# Chrome 다운로드 임시 숨김 파일
+**/.xls
+
+# ── 대용량 데이터 (Git LFS 또는 외부 공유 사용) ─────────────────────────
+# V-World 원본 Shapefile (93 MB, 재다운로드 가능)
+datasets/shapefile/BND_SIGUNGU_PG/
+
+# 원본 해상도 GeoJSON (294 MB, process_shapefile.py 로 재생성 가능)
+datasets/shapefile/SGG_2025/sgg_20250630.json
+
+# ── 포함되는 데이터 ───────────────────────────────────────────────────────
+# datasets/index2025-claude/      (7.2 MB, 원본 XLS 262개)   → 포함
+# datasets/processed/             (7 MB, 처리된 CSV/JSON)     → 포함
+# datasets/shapefile/SGG_2025/smooth_sgg_2025.json (3.6 MB)  → 포함
+# datasets/shapefile/센서스 공간정보 지역 코드.xlsx (3.1 MB)  → 포함
