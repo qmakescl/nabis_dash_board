@@ -22,4 +22,7 @@ dependencies = [
     "shapely>=2.1.0",
     # 시각화
     "matplotlib>=3.10.0",
+    # 대시보드
+    "dash>=2.18.0",
+    "plotly>=6.0.0",
 ]

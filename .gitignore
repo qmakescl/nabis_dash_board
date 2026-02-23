@@ -34,6 +34,9 @@ datasets/shapefile/BND_SIGUNGU_PG/
 # 원본 해상도 GeoJSON (294 MB, process_shapefile.py 로 재생성 가능)
 datasets/shapefile/SGG_2025/sgg_20250630.json
 
+# 센서스 공간정보 테이블 정의서 (hwp, 참조 문서)
+datasets/shapefile/*.hwp
+
 # ── 포함되는 데이터 ───────────────────────────────────────────────────────
 # datasets/index2025-claude/      (7.2 MB, 원본 XLS 262개)   → 포함
 # datasets/processed/             (7 MB, 처리된 CSV/JSON)     → 포함
