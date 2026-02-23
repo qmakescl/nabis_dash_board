@@ -139,7 +139,7 @@ sidebar = html.Div(
         ),
         # 푸터
         html.Div(
-            "Developed by Q",
+            "Q의 지침에 따라 Claude code와 Google Antigravity가 작업했습니다.",
             style={
                 "position": "absolute",
                 "bottom": "0",
@@ -148,8 +148,13 @@ sidebar = html.Div(
                 "lineHeight": "40px",
                 "textAlign": "center",
                 "fontFamily": "Inter, sans-serif",
-                "fontSize": "12px",
+                "fontSize": "9px",
                 "color": "#000",
+                "padding": "0 8px",
+                "lineHeight": "1.3",
+                "display": "flex",
+                "alignItems": "center",
+                "justifyContent": "center",
             },
         ),
     ],
