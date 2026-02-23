@@ -13,8 +13,8 @@
 ### 1. 저장소 클론
 
 ```bash
-git clone https://github.com/qmakescl/NABIS.git
-cd NABIS
+git clone https://github.com/qmakescl/nabis_dash_board.git
+cd nabis_dash_board
 ```
 
 ### 2. uv 설치 (없는 경우)
