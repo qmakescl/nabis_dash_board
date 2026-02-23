@@ -55,15 +55,15 @@ python app.py
 
 ## 데이터 파이프라인
 
+NABIS 원본 데이터(XLS)는 [국가균형발전지원센터](https://www.nabis.go.kr/) 웹사이트에서 별도로 다운로드하여 처리하였다.
+**원본 XLS 파일과 다운로드/처리 스크립트는 저작권 보호를 위해 저장소에 포함하지 않는다.**
+처리 완료된 CSV/JSON 파일(`datasets/processed/`)이 저장소에 포함되어 있으므로, 대시보드 실행에는 별도 데이터 준비가 필요 없다.
+
 ```
-[NABIS 웹사이트]  →(download_nabis_index.py)→  datasets/index2025-claude/{시도}/{지역}.xls
-                                                        ↓
-                                            (build_dashboard_data.py)
-                                                        ↓
-datasets/processed/
-  ├── indicators_long.csv       (56,325행 × 12열)
-  ├── indicator_catalog.json    (46개 지표 메타)
-  └── region_hierarchy.json     (시도 17 → 시군구 228)
+[NABIS 웹사이트]  →(다운로드/처리, 비공개)→  datasets/processed/
+                                               ├── indicators_long.csv       (56,325행 × 12열)
+                                               ├── indicator_catalog.json    (46개 지표 메타)
+                                               └── region_hierarchy.json     (시도 17 → 시군구 228)
 
 [V-World Shapefile] →(process_shapefile.py)→  datasets/shapefile/SGG_2025/
   ├── sgg_20250630.json         (원본 해상도, 294 MB, .gitignore 제외)
@@ -71,9 +71,9 @@ datasets/processed/
                                                         ↓
                                        (prepare_dashboard_data.py)
                                                         ↓
-datasets/processed/
-  ├── geo_sgg_4326.json         (시군구 경계, EPSG:4326)
-  └── geo_sido_4326.json        (시도 외곽선, EPSG:4326)
+                                  datasets/processed/
+                                    ├── geo_sgg_4326.json   (시군구 경계, EPSG:4326)
+                                    └── geo_sido_4326.json  (시도 외곽선, EPSG:4326)
                                                         ↓
                                               (app.py — Dash 서버)
                                                         ↓
@@ -98,13 +98,13 @@ datasets/processed/
 
 ## 스크립트 목록
 
-| 파일 | 역할 |
-|------|------|
-| `app.py` | **대시보드 메인 앱** (Plotly Dash, port 8050) |
-| `prepare_dashboard_data.py` | GeoJSON 전처리 (EPSG:5179→4326, 시도 dissolve) |
-| `download_nabis_index.py` | NABIS XLS 자동 다운로드 (Selenium) |
-| `build_dashboard_data.py` | XLS → 처리 파일 3종 생성 |
-| `process_shapefile.py` | Shapefile → 경량화 GeoJSON 생성 |
+| 파일 | 역할 | 포함 |
+|------|------|------|
+| `app.py` | **대시보드 메인 앱** (Plotly Dash, port 8050) | O |
+| `prepare_dashboard_data.py` | GeoJSON 전처리 (EPSG:5179→4326, 시도 dissolve) | O |
+| `process_shapefile.py` | Shapefile → 경량화 GeoJSON 생성 | O |
+| `download_nabis_index.py` | NABIS XLS 자동 다운로드 (Selenium) | X (비공개) |
+| `build_dashboard_data.py` | XLS → 처리 파일 3종 생성 | X (비공개) |
 
 ---
 
@@ -134,12 +134,19 @@ CSV와 GeoJSON 간 지역명 불일치를 `app.py` 로딩 시 자동 보정한�
 
 ---
 
-## Git에 포함되지 않은 대용량 파일
+## Git에 포함되지 않은 파일
 
 아래 파일은 `.gitignore`에 의해 제외되어 있으므로, 데이터를 처음부터 재생성하려면 직접 준비해야 한다.
 **대시보드만 실행하려면 아래 파일은 필요 없다** (처리 완료 파일이 저장소에 포함됨).
 
-### (A) V-World 시군구 경계 Shapefile
+### (A) NABIS 원본 XLS 데이터
+
+- 출처: [국가균형발전지원센터(NABIS)](https://www.nabis.go.kr/) > 균형발전지표 > 시도/시군구별 다운로드
+- 저장 경로: `datasets/index2025-claude/{시도}/{지역}.xls`
+- 제외 사유: 저작권 보호 (NABIS 웹사이트에서 직접 다운로드 가능)
+- 처리 스크립트(`download_nabis_index.py`, `build_dashboard_data.py` 등)도 비공개
+
+### (B) V-World 시군구 경계 Shapefile
 
 - 출처: [국토정보플랫폼 V-World](https://map.vworld.kr/map/maps.do) > 공간정보 다운로드 > 행정구역 > 시군구
 - 저장 경로: `datasets/shapefile/BND_SIGUNGU_PG/`

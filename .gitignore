@@ -27,6 +27,17 @@ nabis_debug.txt
 # Chrome 다운로드 임시 숨김 파일
 **/.xls
 
+# ── NABIS 원본 XLS (저작권 보호, 재다운로드 가능) ────────────────────────
+datasets/index2025-claude/
+
+# ── NABIS 다운로드/처리 스크립트 (원본 데이터 비공개에 따라 제외) ─────────
+download_nabis_index.py
+build_dashboard_data.py
+scrape_nabis_api.py
+scrape_nabis_data.py
+parse_nabis.py
+parse_nabis2.py
+
 # ── 대용량 데이터 (Git LFS 또는 외부 공유 사용) ─────────────────────────
 # V-World 원본 Shapefile (93 MB, 재다운로드 가능)
 datasets/shapefile/BND_SIGUNGU_PG/
@@ -38,7 +49,6 @@ datasets/shapefile/SGG_2025/sgg_20250630.json
 datasets/shapefile/*.hwp
 
 # ── 포함되는 데이터 ───────────────────────────────────────────────────────
-# datasets/index2025-claude/      (7.2 MB, 원본 XLS 262개)   → 포함
-# datasets/processed/             (7 MB, 처리된 CSV/JSON)     → 포함
-# datasets/shapefile/SGG_2025/smooth_sgg_2025.json (3.6 MB)  → 포함
-# datasets/shapefile/센서스 공간정보 지역 코드.xlsx (3.1 MB)  → 포함
+# datasets/processed/             (처리된 CSV/JSON)                → 포함
+# datasets/shapefile/SGG_2025/smooth_sgg_2025.json (3.6 MB)       → 포함
+# datasets/shapefile/센서스 공간정보 지역 코드.xlsx (3.1 MB)       → 포함
